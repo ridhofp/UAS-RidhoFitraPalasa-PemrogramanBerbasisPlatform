@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "5baf9dd6-fbcb-4b03-b9be-a81636981264",
+		"name": "go-uas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24908491"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/buku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/query?title=bumi manusia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"query"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "bumi manusia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"hello\",\r\n    \"price\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/books"
+			},
+			"response": []
+		}
+	]
+}
